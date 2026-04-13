@@ -1,0 +1,10 @@
+name: compression-ai-mcp
+description: "MEOK AI Labs — Data compression analysis and optimization tools powered by MEOK AI Labs."
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/compression-ai-mcp
+license: MIT
+categories: [Utilities, Data Processing]
+tags: [compression, file-compression, gzip, data-compression, archiving]
+runtime: python
+entrypoint: server.py
