@@ -1,10 +1,44 @@
 name: compression-ai-mcp
-description: "MEOK AI Labs — Data compression analysis and optimization tools powered by MEOK AI Labs."
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/compression-ai-mcp
-license: MIT
-categories: [Utilities, Data Processing]
-tags: [compression, file-compression, gzip, data-compression, archiving]
-runtime: python
-entrypoint: server.py
+description: Compression ratio estimation, algorithm suggestions, savings calculation,
+  and benchmarking.
+version: 1.0.0
+tools:
+- name: estimate_ratio
+  description: Estimate compression ratios for data using multiple algorithms.
+  parameters:
+  - name: data
+    type: string
+    required: true
+  - name: algorithms
+    type: string
+    required: false
+- name: suggest_algorithm
+  description: Suggest the best compression algorithm for a given use case.
+  parameters:
+  - name: data_type
+    type: string
+    required: true
+  - name: priority
+    type: string
+    required: false
+  - name: size_mb
+    type: number
+    required: false
+- name: calculate_savings
+  description: Calculate storage and bandwidth savings from compression.
+  parameters:
+  - name: original_size_mb
+    type: number
+    required: true
+  - name: compressed_size_mb
+    type: number
+    required: true
+  - name: file_count
+    type: integer
+    required: false
+- name: benchmark_data
+  description: Benchmark compression of data across all available algorithms.
+  parameters:
+  - name: data
+    type: string
+    required: true
