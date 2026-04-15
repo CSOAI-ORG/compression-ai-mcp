@@ -16,7 +16,7 @@ import base64
 from collections import defaultdict
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP("compression-ai-mcp")
+mcp = FastMCP("compression-ai", instructions="MEOK AI Labs MCP Server")
 
 _call_counts: dict[str, list[float]] = defaultdict(list)
 FREE_TIER_LIMIT = 50

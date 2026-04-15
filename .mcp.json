@@ -1,6 +1,6 @@
 {
   "name": "compression-ai-mcp",
-  "description": "Compression ratio estimation, algorithm suggestions, savings calculation, and benchmarking.",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Sovereign AI tools for everyone.",
   "version": "1.0.0",
   "tools": [
     {
@@ -13,7 +13,7 @@
             "type": "string"
           },
           "algorithms": {
-            "type": "string"
+            "type": "array"
           }
         },
         "required": [
