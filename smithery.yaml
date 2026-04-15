@@ -1,5 +1,6 @@
 name: compression-ai-mcp
-description: MEOK AI Labs MCP Server
+description: Compression Ai automation via MCP. Includes estimate ratio, suggest algorithm,
+  calculate savings. By MEOK AI Labs.
 version: 1.0.0
 tools:
 - name: estimate_ratio
