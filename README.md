@@ -1,54 +1,38 @@
-# Compression AI MCP Server
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — Data compression analysis, algorithm selection, and benchmarking
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/compression-ai-mcp)](https://github.com/CSOAI-ORG/compression-ai-mcp/stargazers)
+
+# ucompressionU aiU mcp
+
+****
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/compression-ai-mcp)](https://www.npmjs.com/package/@meok-ai/compression-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/compression-ai-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install compression-ai-mcp
+# or
+npm install -g @meok-ai/compression-ai-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-python server.py
-```
+See the project repository for full documentation and examples.
 
-## Tools
+## Enterprise Support
 
-### `estimate_ratio`
-Estimate compression ratios using multiple algorithms (gzip, zlib, bz2, lzma).
-
-**Parameters:**
-- `data` (str): Text data or base64-encoded binary
-- `algorithms` (list[str]): Algorithms to test (default: gzip, zlib, bz2)
-
-### `suggest_algorithm`
-Suggest the best compression algorithm for your use case and priority.
-
-**Parameters:**
-- `data_type` (str): Data type — 'text', 'json', 'binary', 'image', 'video', 'database', 'logs', 'web'
-- `priority` (str): Priority — 'speed', 'ratio', 'balanced'
-- `size_mb` (float): Approximate data size in MB
-
-### `calculate_savings`
-Calculate storage and bandwidth savings from compression including estimated AWS S3 cost savings.
-
-**Parameters:**
-- `original_size_mb` (float): Original size in MB
-- `compressed_size_mb` (float): Compressed size in MB
-- `file_count` (int): Number of similar files
-
-### `benchmark_data`
-Benchmark compression across all available algorithms with speed and ratio metrics.
-
-**Parameters:**
-- `data` (str): Text data to benchmark (max 1MB)
-
-## Authentication
-
-Free tier: 50 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)
