@@ -1,3 +1,5 @@
+[![compression-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/compression-ai-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/compression-ai-mcp)
+
 <div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/compression-ai-mcp)](https://github.com/CSOAI-ORG/compression-ai-mcp/stargazers)
