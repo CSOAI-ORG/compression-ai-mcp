@@ -1,0 +1,25 @@
+{
+  "name": "compression-ai-mcp",
+  "title": "Compression Ai Mcp",
+  "description": "Compression Ai automation via MCP. Includes estimate ratio, suggest algorithm, calculate savings. By MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "estimate_ratio"
+    },
+    {
+      "name": "suggest_algorithm"
+    },
+    {
+      "name": "calculate_savings"
+    },
+    {
+      "name": "benchmark_data"
+    }
+  ]
+}

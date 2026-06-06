@@ -1,0 +1,9 @@
+# compression-ai-mcp - Auto-trigger Rules
+
+When the user asks about compression, use compression-ai-mcp tools: estimate_ratio, suggest_algorithm, calculate_savings, benchmark_data
+
+Data compression analysis and optimization tools powered by MEOK AI Labs.
+
+Install: `pip install compression-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.
