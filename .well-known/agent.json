@@ -1,0 +1,59 @@
+{
+  "name": "compression-ai-mcp",
+  "description": "Compression Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/compression-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "estimate_ratio",
+      "name": "Estimate Ratio",
+      "description": "estimate_ratio via compression-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "suggest_algorithm",
+      "name": "Suggest Algorithm",
+      "description": "suggest_algorithm via compression-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "calculate_savings",
+      "name": "Calculate Savings",
+      "description": "calculate_savings via compression-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "benchmark_data",
+      "name": "Benchmark Data",
+      "description": "benchmark_data via compression-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
