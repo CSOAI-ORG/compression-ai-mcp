@@ -1,44 +1,37 @@
-name: compression-ai-mcp
-description: Compression Ai automation via MCP. Includes estimate ratio, suggest algorithm,
-  calculate savings. By MEOK AI Labs.
-version: 1.0.0
-tools:
-- name: estimate_ratio
-  description: Estimate compression ratios for data using multiple algorithms.
-  parameters:
-  - name: data
-    type: string
-    required: true
-  - name: algorithms
-    type: array
-    required: false
-- name: suggest_algorithm
-  description: Suggest the best compression algorithm for a given use case.
-  parameters:
-  - name: data_type
-    type: string
-    required: true
-  - name: priority
-    type: string
-    required: false
-  - name: size_mb
-    type: number
-    required: false
-- name: calculate_savings
-  description: Calculate storage and bandwidth savings from compression.
-  parameters:
-  - name: original_size_mb
-    type: number
-    required: true
-  - name: compressed_size_mb
-    type: number
-    required: true
-  - name: file_count
-    type: integer
-    required: false
-- name: benchmark_data
-  description: Benchmark compression of data across all available algorithms.
-  parameters:
-  - name: data
-    type: string
-    required: true
+# smithery.yaml — Smithery (https://smithery.ai) submission payload
+# Repo: CSOAI-ORG/compression-ai-mcp
+# Generated: 2026-06-09
+# Transport: stdio (PyPI package, installed via uvx)
+# See: DISTRIBUTION_GAPS_2026-06-08.md for the channel strategy
+startCommand:
+  type: stdio
+  timeout: 120000
+  pingInterval: 5000
+  pingTimeout: 30000
+  configSchema:
+    type: object
+    required: []
+    properties:
+      apiKey:
+        type: string
+        description: "MEOK API key (optional; required for x402 paywalled tools)"
+        default: ""
+      x402PayTo:
+        type: string
+        description: "USDC address for x402 micropayments (default: meok.ai wallet)"
+        default: ""
+      logLevel:
+        type: string
+        description: "Log level (debug, info, warn, error)"
+        default: "info"
+    additionalProperties: false
+  commandFunction: |-
+    (config) => ({
+      command: 'uvx',
+      args: ['compression_ai'],
+      env: {
+        MEOK_API_KEY: config.apiKey || '',
+        X402_PAY_TO: config.x402PayTo || '',
+        MEOK_LOG_LEVEL: config.logLevel || 'info',
+      }
+    })
