@@ -1,3 +1,4 @@
+<<<<<<< a33910b5d4d400920d6545baa05da4f109d34cda
 # smithery.yaml — Smithery (https://smithery.ai) submission payload
 # Repo: CSOAI-ORG/compression-ai-mcp
 # Generated: 2026-06-09
@@ -35,3 +36,62 @@ startCommand:
         MEOK_LOG_LEVEL: config.logLevel || 'info',
       }
     })
+=======
+name: compression-ai-mcp
+description: Compression Ai automation via MCP. Includes estimate ratio, suggest algorithm,
+  calculate savings. By MEOK AI Labs.
+version: 1.0.0
+tools:
+- name: estimate_ratio
+  description: Estimate compression ratios for data using multiple algorithms.
+  parameters:
+  - name: data
+    type: string
+    required: true
+  - name: algorithms
+    type: array
+    required: false
+- name: suggest_algorithm
+  description: Suggest the best compression algorithm for a given use case.
+  parameters:
+  - name: data_type
+    type: string
+    required: true
+  - name: priority
+    type: string
+    required: false
+  - name: size_mb
+    type: number
+    required: false
+- name: calculate_savings
+  description: Calculate storage and bandwidth savings from compression.
+  parameters:
+  - name: original_size_mb
+    type: number
+    required: true
+  - name: compressed_size_mb
+    type: number
+    required: true
+  - name: file_count
+    type: integer
+    required: false
+- name: benchmark_data
+  description: Benchmark compression of data across all available algorithms.
+  parameters:
+  - name: data
+    type: string
+    required: true
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required:
+    - apiKey
+    properties:
+      apiKey:
+        type: string
+        description: Your MEOK API Key
+  commandFunction: "(config) => ({\n  command: 'uvx',\n  args: ['compression-ai-mcp',\
+    \ '--api-key', config.apiKey],\n  env: {\n    MEOK_API_KEY: config.apiKey\n  }\n\
+    })"
+>>>>>>> feat/smither-workflows
